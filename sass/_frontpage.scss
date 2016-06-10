@@ -53,3 +53,59 @@ header#hero {
 		}
 	} 
 }
+
+
+
+// MEDIA QUERIES
+
+/* hi-res laptops and desktops */ 
+@media (max-width:1281px) { 
+
+}
+
+/* big landscape tablets, laptops, and desktops */ 
+@media (max-width:1025px) { 
+
+}
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */ 
+@media (max-width:961px) { 
+	.about-me .container {
+		.about-photo {
+			width:calc(40%);
+		}
+		.about-description{
+			p{
+				column-count:1;
+				column-gap:0px;
+			}
+		} 
+	}
+}
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+@media (max-width:641px) { 
+
+	header#hero {
+		height:80vh;
+	}
+
+}
+
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+@media (max-width:481px) { 
+
+	header#hero {
+		height:auto;
+
+		.hero-info {
+			width:80%;
+			padding:50px 0;
+		}
+	}
+}
+
+/* smartphones, iPhone, portrait 480x320 phones */ 
+@media (max-width:320px) { 
+
+}

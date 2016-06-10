@@ -58,6 +58,10 @@ ul.tags {
 	flex-flow:row wrap;
 	justify-content:flex-start;
 	align-items:center;
+	a {
+		font-family: 'Oswald', sans-serif;
+		font-size: 1.2rem;
+	}
 	button {
 		outline: none;
 		background: none;
@@ -68,10 +72,73 @@ ul.tags {
 		transition:0.3s;
 		&:hover {
 			background: $accentColor;
-			// border-color: $accentColor;
 		}
 	}
 	li {
 		display: inline-block;
 	}
+}
+
+
+// MEDIA QUERIES
+
+/* hi-res laptops and desktops */ 
+@media (max-width:1281px) { 
+
+}
+
+/* big landscape tablets, laptops, and desktops */ 
+@media (max-width:1025px) { 
+
+}
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */ 
+@media (max-width:961px) { 
+	
+	.project-container .container {
+		
+		.project-details {
+			width:calc(50% - 25px);
+			h1 {
+				font-size: 2rem;
+				// margin-bottom: 0;
+				// color:$green;
+			}
+		}	
+	}
+}
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+@media (max-width:641px) { 
+
+		.project-container .container {
+
+			display:flex;
+			flex-flow:column wrap;
+			justify-content:flex-start;
+			align-items:flex-start;
+
+			img {
+				max-width:calc(100%);
+				margin-bottom: 25px;
+			}
+			
+			.project-details {
+				width:calc(100%);
+			}	
+		}
+
+		.project-container:nth-child(2n-1) .container{
+			flex-direction:column;
+		}
+}
+
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+@media (max-width:481px) { 
+
+}
+
+/* smartphones, iPhone, portrait 480x320 phones */ 
+@media (max-width:320px) { 
+
 }

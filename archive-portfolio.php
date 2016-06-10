@@ -32,7 +32,7 @@ while ( $loop->have_posts() ) : $loop->the_post();
             <h1><?php the_title(); ?></h1>
             <?php the_content(); ?>
             <ul class="tags">
-                <button class="view-demo">View Live Site</button>
+                <a href="<?php echo get_field('project_url') ?>" target="_blank"><button class="view-demo">View Live Site</button></a>
                 <?php
                 $posttags = get_the_tags();
                 if ($posttags) {

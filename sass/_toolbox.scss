@@ -43,3 +43,68 @@
 		}
 	}
 }
+
+// MEDIA QUERIES
+
+/* hi-res laptops and desktops */ 
+@media (max-width:1281px) { 
+
+}
+
+/* big landscape tablets, laptops, and desktops */ 
+@media (max-width:1025px) { 
+
+}
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */ 
+@media (max-width:961px) { 
+
+	.toolbox .container {
+		h2 {
+			margin-bottom: 25px;
+		}
+
+		.tools {
+			width:calc(100% / 4);
+		}
+	}
+}
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+@media (max-width:641px) { 
+
+	.toolbox .container {
+
+		.tools {
+			width:calc(100% / 3);
+			padding:10px;
+
+			h3 {
+				display:none;
+				visibility: none;
+				opacity: 0;
+			}
+		}
+	}
+}
+
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+@media (max-width:481px) { 
+
+	.toolbox .container {
+		.tools {
+			width:calc(100% / 4);
+			padding:10px;
+			
+			.devicon,
+			.fa {
+				font-size: 3rem;
+			}
+		}
+	}
+}
+
+/* smartphones, iPhone, portrait 480x320 phones */ 
+@media (max-width:320px) { 
+
+}
