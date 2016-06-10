@@ -1,0 +1,58 @@
+article.contact-form {
+	padding:100px 0;
+}
+
+form#contact-form {
+	width:100%;
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:space-between;
+	
+	font-family: 'Quattrocento', serif;
+	font-size: 1.4rem;
+	color:$mainColor;
+	
+
+	input[type="text"],
+	input[type="email"] {
+		width:calc((100% / 2) - 5px);
+		outline:none;
+		border:1px solid $lightGreen;
+		padding:10px;
+		margin-bottom: 10px;
+		&:hover,
+		&:focus {
+			border-color: $accentColor;
+			background: $white;
+		}
+	}
+
+	textarea {
+		outline:none;
+		border:1px solid $lightGreen;
+		width:100%;
+		height:200px;
+		padding:10px;
+		margin-bottom: 10px;
+		&:hover,
+		&:focus {
+			border-color: $accentColor;
+			background: $white;
+		}
+	}
+
+	input[type=submit] {
+		outline: none;
+		border:1px solid $mainColor;
+		background: none;
+		font-family: 'Oswald', sans-serif;
+		font-size: 1.2rem;
+		color:$mainColor;
+		text-transform: uppercase;
+		padding:10px 25px;
+		transition:0.3s;
+		&:hover {
+			background: $accentColor;
+		}
+	}	
+}

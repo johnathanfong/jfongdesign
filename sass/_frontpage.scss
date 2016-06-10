@@ -1,0 +1,55 @@
+// FRONT PAGE STYLING
+
+header#hero {
+	height:100vh;
+
+	display:flex;
+	flex-flow: column wrap;
+
+	ul#menu-main-menu a{
+		color:$white;
+		position:relative;
+		&:hover{
+			color:$mainColor;
+			padding-bottom: 5px;
+			border-bottom: 2px solid $accentColor;
+		}
+	}
+	
+	.hero-info {
+		margin:auto;
+		width:70%;
+		text-align: center;
+		color:$white;
+		p {
+			font-size: 2rem;
+		}
+	}
+}
+
+.about-me .container {
+	display:flex;
+	flex-flow:column wrap;
+	justify-content:flex-start;
+	align-items:flex-start;
+
+	.about-photo {
+		width:calc(30%);
+		margin:0 auto;
+		margin-bottom: 25px;
+		img {
+			width: 100%;
+			border-radius: 50%;
+		}
+	}
+	.about-description{
+		h2 {
+			text-align: center;
+		}
+
+		p{
+			column-count:2;
+			column-gap:25px;
+		}
+	} 
+}

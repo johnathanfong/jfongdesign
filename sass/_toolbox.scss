@@ -1,0 +1,45 @@
+.toolbox .container {
+	h2 {
+		display:inline-block;
+		width:100%;
+		text-align: center;
+		margin-bottom: 50px;
+	}
+
+	display:flex;
+	flex-flow:row wrap;
+
+	.tools {
+		width:calc(100% / 5);
+		padding:20px;
+		text-align: center;
+
+		display: flex;
+		flex-flow:column;
+		
+		.devicon,
+		.fa {
+			display: inline-block;
+			margin:0 auto;
+			margin-bottom: 15px;
+			font-size: 5rem;
+			color:$green;
+			transition:color 0.3s;
+		}
+		h3 {
+			color:$lightGreen;
+			transition:all 0.3s;
+		}
+
+		&:hover {
+			.devicon,
+			.fa,
+			h3 {
+				color:$accentColor;
+			}
+			h3 {
+				transform:scale(1.25);
+			}
+		}
+	}
+}

@@ -1,0 +1,46 @@
+footer {
+	background:$mainColor;
+	color:white;
+	padding:50px 0;
+
+	.container {
+		display:flex;
+		flex-flow:row wrap;
+		justify-content:space-between;
+		align-items:center;
+
+		.fa {
+			font-size: 1.5rem;
+			color:white;
+			transition:color 0.3s;
+			&:hover {
+				color:$accentColor;
+			}
+		}
+	}
+}
+
+span.credit {
+	a {
+		color:white;
+		transition:color 0.3s;
+		&:hover {
+			color:$accentColor;
+		}
+	}
+}
+
+aside.social {
+	p {
+		display: inline;
+		font-family: 'Oswald', sans-serif;
+		text-transform: uppercase;
+		margin-right: 15px;
+	}
+	span {
+		margin-right: 15px;
+		a {
+			font-size: 2rem;
+		}
+	}
+}

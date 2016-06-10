@@ -1,0 +1,32 @@
+.services .container {
+	h2 {
+		display:inline-block;
+		width:100%;
+		text-align: center;
+		margin-bottom: 50px;
+	}
+
+	display:flex;
+	flex-flow:row wrap;
+
+	.service {
+		width:calc(100% / 3);
+		padding:20px;
+		text-align: center;
+
+		display: flex;
+		flex-flow:column;
+
+		.fa {
+			display: inline-block;
+			margin:0 auto;
+			font-size: 8rem;
+			color:$green;
+			margin-bottom: 25px;
+		}
+		p {
+			text-align: left;
+			color:$lightGreen;
+		}
+	}
+}

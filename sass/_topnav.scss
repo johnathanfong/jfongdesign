@@ -1,0 +1,12 @@
+ul#menu-main-menu {
+	display:flex;
+	flex-flow: row wrap;
+	justify-content:center;
+	align-items:center;
+	li {
+		padding:25px;
+		a {
+			text-transform: uppercase;
+		}
+	}
+}

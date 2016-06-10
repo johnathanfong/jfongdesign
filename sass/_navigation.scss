@@ -1,0 +1,21 @@
+ul.menu {
+	margin: 0;
+	padding: 0;
+	li {
+		list-style: none;
+		padding:0;
+		margin:0;
+		a {
+			outline: none;
+			text-decoration: none;
+			font-family: 'Oswald', sans-serif;
+			font-size: 1.2rem;
+			font-weight: 400;
+			color:$mainColor;
+			transition:color 0.3s;
+			&:hover {
+				color:$accentColor;
+			}
+		}
+	}
+}
