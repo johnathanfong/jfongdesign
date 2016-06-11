@@ -109,7 +109,8 @@ ul.tags {
 }
 
 /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
-@media (max-width:641px) { 
+@media (max-width:641px)
+and (orientation : landscape) { 
 
 		.project-container .container {
 
@@ -134,7 +135,8 @@ ul.tags {
 }
 
 /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
-@media (max-width:481px) { 
+@media (max-width:481px)
+and (orientation : portrait) { 
 
 }
 
