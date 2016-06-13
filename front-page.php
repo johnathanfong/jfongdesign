@@ -55,9 +55,11 @@
 </section>
 
 <section class="portfolio" id="portfolio">
-  <div class="container">
+  <div id="portfolio-intro">
+  <article class="container">
       <h2>My Portfolio</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cupiditate vero ratione porro, delectus provident est odio earum modi iure, quaerat error, vitae totam quam sit et nobis necessitatibus optio architecto saepe esse fuga dignissimos. Illo deserunt sint, vero natus. Dolore, aut magni, quos officia aspernatur dolor esse. Doloremque voluptatem corrupti cumque numquam delectus, voluptatibus quos, tenetur quisquam officiis, aliquam consequatur nobis, assumenda soluta. Fugiat officia culpa harum quia, doloremque atque ipsam natus! Quas corporis porro molestias odio corrupti, dolorem vero consectetur saepe cumque impedit enim nostrum consequatur quo quisquam blanditiis alias at itaque iure est voluptas voluptatem fuga veniam?</p>
+    </article>
   </div>
       <?php include('archive-portfolio.php') ?>
 </section>

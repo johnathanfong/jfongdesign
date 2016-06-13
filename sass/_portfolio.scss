@@ -1,19 +1,22 @@
 .portfolio{
-	padding-bottom: 0;
+	padding:0;
 	&:after {
 		content:none;
 	}
 }
 
+#portfolio-intro {
+	background: lighten($mainColor,5);
+	color:$white;	
+}
 
 .portfolio .container {
+	padding:50px 0;
+	margin-bottom: 2px;
 	h2 {
 		display: inline-block;
 		width: 100%;
 		text-align: center;
-	}
-	p {
-		margin-bottom: 50px;
 	}
 } 
 
@@ -109,11 +112,10 @@ ul.tags {
 }
 
 /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
-@media (max-width:641px)
-and (orientation : landscape) { 
+@media (max-width:641px) { 
 
 		.project-container .container {
-
+		
 			display:flex;
 			flex-flow:column wrap;
 			justify-content:flex-start;
@@ -135,8 +137,7 @@ and (orientation : landscape) {
 }
 
 /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
-@media (max-width:481px)
-and (orientation : portrait) { 
+@media (max-width:481px) { 
 
 }
 
