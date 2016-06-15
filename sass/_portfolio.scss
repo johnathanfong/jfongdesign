@@ -16,6 +16,7 @@
 	h2 {
 		display: inline-block;
 		width: 100%;
+		margin:0;
 		text-align: center;
 	}
 } 
@@ -25,7 +26,7 @@
 	margin-bottom: 2px;
 
 	display:flex;
-	flex-flow:row wrap;
+	flex-flow:row nowrap;
 	justify-content:space-between;
 	align-items:center;
 

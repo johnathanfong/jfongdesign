@@ -15,5 +15,17 @@ $(function(){
 	    }
 	  });
 	// END SMOOTH SCROLL
+
+	// TOGGLE CLASS
+
+		function toggleShow() {
+			$('#menu-main-menu').toggleClass('show');
+	        console.log('working')
+		}
+		
+		$(".mobile-menu").on("click", toggleShow);
+		$("#menu-main-menu li a").on("click", toggleShow);
+
+	// END TOGGLE CLASS
 });
 
