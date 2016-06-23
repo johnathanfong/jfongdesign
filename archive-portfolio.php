@@ -30,9 +30,7 @@ while ( $loop->have_posts() ) : $loop->the_post();
         
         <div class="project-details">    
             <h1><?php the_title(); ?></h1>
-            <?php the_content(); ?>
             <ul class="tags">
-                <a href="<?php echo get_field('project_url') ?>" target="_blank"><button class="view-demo">View Live Site</button></a>
                 <?php
                 $posttags = get_the_tags();
                 if ($posttags) {
@@ -46,6 +44,8 @@ while ( $loop->have_posts() ) : $loop->the_post();
                 }
                 ?>
             </ul>
+            <?php the_content(); ?>
+            <a href="<?php echo get_field('project_url') ?>" target="_blank"><button class="view-demo">View Live Site</button></a>
         </div>
     </div>
 </div>
